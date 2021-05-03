@@ -11,24 +11,41 @@
     text-transform: uppercase;
     border-radius: 5px;
     background-color: $light-red;
+
+    
   }
   
   .default {
     background-color: $light-blue;
+    &:hover {
+      background-color: lighten($light-blue, 10%);
+    }
   }
   
   .error {
     background-color: $light-red;
+    &:hover {
+      background-color: lighten($light-red, 10%);
+    }
   }
   
   .info {
     background-color: $light-purple;
+    &:hover {
+      background-color: lighten($light-purple, 10%);
+    }
   }
   
   .success {
     background-color: #63cc82;
+    &:hover {
+      background-color: lighten(#63cc82, 10%);
+    }
   }
   
   .warning {
     background-color: $light-orange;
+    &:hover {
+      background-color: lighten($light-orange, 10%);
+    }
   }

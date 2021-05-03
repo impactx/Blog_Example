@@ -399,21 +399,36 @@ a {
 .default {
   background-color: #51ddfc;
 }
+.default:hover {
+  background-color: #83e7fd;
+}
 
 .error {
   background-color: #e4757a;
+}
+.error:hover {
+  background-color: #eca0a3;
 }
 
 .info {
   background-color: #927bc1;
 }
+.info:hover {
+  background-color: #af9ed1;
+}
 
 .success {
   background-color: #63cc82;
 }
+.success:hover {
+  background-color: #89d9a1;
+}
 
 .warning {
   background-color: #fd7856;
+}
+.warning:hover {
+  background-color: #fea088;
 }
 
 /* ============================================= */
@@ -532,7 +547,6 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
