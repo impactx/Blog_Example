@@ -7,3 +7,21 @@ $light-blue: #51ddfc;
 
 // Media Query
 $mq-m: 768px;
+
+
+// Array
+
+$themeColors: (
+    'col-1': $light-purple,
+    'col-2': $light-orange,
+    'col-3': #deb2ee,
+    'col-4': #7ee6fd,
+    'colr-5': #88d9a0,
+    'col-6' : #4da2bb,
+    'col-7' : #ec9fa3,
+    'col-8' : #fd9f85,
+    'col-9' : $light-red,
+    'col-10': #63cc82,
+    'col-11': $light-blue,
+    'col-12': #80e8d1
+);
