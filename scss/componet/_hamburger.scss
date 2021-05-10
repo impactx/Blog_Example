@@ -1,0 +1,45 @@
+.hamburger {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    transition: transform .6s ease-in-out;
+    // Animation for hamburger
+     
+    
+}
+
+.hamburger-line {
+    z-index: 101;
+    position: relative;
+    margin-top: auto;
+    background: black;
+    width: 30px;
+    height: 6px;
+    border-radius: 5px;
+    transition: transform .6s ease-in-out, background-color 3s ease-in-out;
+   @include tablet {
+       display: none;
+   }
+    &::after {
+        @include hamburger_line;
+        transform: translateY(-10px);
+    }
+
+    &::before {
+        @include hamburger_line;
+        transform: translateY(10px);
+    }
+    &.open {
+        background: transparent;
+    }
+
+    &.open::before{
+        transform: rotate(-45deg);
+    }
+    &.open::after{
+        transform: rotate(45deg);
+    }
+
+    
+    
+}

@@ -1,47 +1,65 @@
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
+h1,
+h3 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-weight: bolder;
+}
+h1 {
+  @include tablet {
+    font-size: 50px;
+    color: white;
+  }
+}
 
-* {
-    font-family: 'Lato', sans-serif;
-    color: #777;
-    box-sizing: border-box;
-  }
-  
-  p {
-    line-height: 1.45em;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  
-  /* ============================================= */
-  /*              Typography                       */
-  /* ============================================= */
-  
-  .headline-primary {
-    color: $teal;
-    margin-left: 10px;
-  }
-  
-  .headline-secondary {
-    font-weight: 300;
-    color: #777;
-  }
-  
-  .link {
-    color: $light-blue;
-    font-weight: 700;
-  }
-  
-  .blockquote {
+h3 {
+  font-size: 2em;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  margin: 0;
+}
+main {
+  @include mobile-container;
+}
+img {
+  width: 100%;
+  display: block;
+}
+p,
+li,
+a {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  font-weight: bolder;
+}
+p {
+  font-size: $font-mobile;
+
+  font-weight: lighter;
+  @include tablet {
     font-size: 1.5em;
-    font-weight: 300;
-    font-style: italic;
-    margin-left: 20px;
-    padding-left: 20px;
-    border-left: 8px solid $teal;
-    border-radius: 5px;
   }
+}
+aside {
+  @include mobile-container;
+}
+i {
+  font-size: 1.5em;
+  @include tablet {
+    font-size: 2em;
+  }
+}
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */

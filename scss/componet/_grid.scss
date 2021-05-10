@@ -2,34 +2,41 @@
 /*              Grid System                      */
 /* ============================================= */
 
-.container {
-    padding: 0 10px;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: column;
-    padding: 1em 10px;
-  }
-  
-  [class^=col] {
-    margin-top: 10px;
-    flex-basis: 100%;
-    min-height: 25px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  @each $themeColor, $i in $themeColors {
-    .theme {
-      &.#{$themeColor} {
-        background-color: $i;
-      }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));    grid-template-areas: 
+    'header'
+    'profile'
+    'info'
+    'main'
+    'footer';
+    @include tablet {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        'header header'
+        'profile info'
+        'profile info'
+        'main main'
+        'footer footer';
+        
     }
-  }
-  
-  
-  
-  .card {
-    flex-basis: 100%;
-  }
+}
+
+.h-container {
+    grid-area: header;
+}
+.info {
+    grid-area: info;
+}
+
+.profile-container {
+    grid-area: profile;
+}
+
+.m-container {
+    grid-area: main;
+}
+.main-footer {
+    grid-area: footer;
+}

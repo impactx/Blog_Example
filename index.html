@@ -5,138 +5,137 @@
     <title>Circles UI Kit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="container">
-    <header class="row">
-      <div class="col-3">
-        <a class="link" href="/">
-          <img class="img img-logo" alt="circles logo" src="images/logo.png" />
-        </a>
+  <body class="container grid">
+    <header class="h-container">
+      <h1>Your Blog</h1>
+      <ul class="social social-top">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </ul>
+      <div class="hamburger" onclick="menuOpen()">
+        <div class="hamburger-line" id="hamburger"></div>
       </div>
-      <div class="col-9">
-        <nav class="nav">
-          <a class="nav-link" href="#type">Typography</a>
-          <a class="nav-link" href="#buttons">Buttons</a>
-          <a class="nav-link" href="#forms">Form</a>
-          <a class="nav-link" href="#images">Images</a>
-          <a class="nav-link" href="#grid">Grid</a>
+      <nav class="nav" id="nav">
+        <ul class="nav-ul">
+          <a href=""><li>Home</li></a>
+          <a href=""><li>Photos</li></a>
+          <a href=""><li>About</li></a>
+          <a href=""><li>Travel</li></a>
+          <a href=""><li>Lifestyle</li></a>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="nav-tablet">
+          <a href="index.html"><li>Home</li></a>
+          <a href=""><li>Photos</li></a>
+          <a href=""><li>About</li></a>
+          <a href=""><li>Travel</li></a>
+          <a href=""><li>Lifestyle</li></a>
+        </ul>
+      </nav>
+      <div class="header-line"></div>
+    </header>
+    <aside class="profile-container">
+      <div class="profile">
+        <img src="img/person.jpg" alt="" />
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <div class="button">
+          <a href="">Read More</a>
+        </div>
+      </div>
+    </aside>
+    <aside class="info">
+      <div>
+        <h3>About Me</h3>
+        <p>
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </div>
+      <div>
+        <h3>Follow Me</h3>
+        <ul class="social follow-social">
+          <i class="fab fa-facebook">Facebook</i>
+          <i class="fab fa-twitter-square">Twitter</i>
+          <i class="fab fa-linkedin">LinkedIn</i>
+          <i class="fab fa-instagram">Instagram</i>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="m-container">
+      <div class="images">
+        <div class="overlay">
+          <img src="img/enviorment/enviorment (1).jpg" alt="" />
+          <div class="overlay-text">
+            <h3>Forest</h3>
+          </div>
+        </div>
+
+        <div class="overlay">
+          <img src="img/enviorment/enviorment (2).jpg" alt="" />
+          <div class="overlay-text">
+            <h3>Field of Hay</h3>
+          </div>
+        </div>
+
+        <div class="overlay">
+          <img src="img/enviorment/enviorment (3).jpg" alt="" />
+          <div class="overlay-text">
+            <h3>Forest with smoke</h3>
+          </div>
+        </div>
+        <div class="overlay">
+          <img src="img/enviorment/enviorment (4).jpg" alt="" />
+          <div class="overlay-text">
+            <h3>Tree</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-nav">
+        <nav>
+          <ul> 
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Photos</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Travel</li></a>
+            <a href=""><li>Lifestyle</li></a>
+          </ul>
         </nav>
       </div>
-    </header>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <p>
-            This is what the navigation menu looks like when the screen is at
-            768px or higher. When the screen is less than 768px, the menu will
-            be displayed vertically.
-          </p>
-        </div>
+      <div class="footer-contact">
+        <h3>Contact Me</h3>
+        <ul> 
+          <li>example@email.com</li>
+          <li>1(800) 123-4567</li>
+          <li>222 address, Chicago Il</li>
+        </ul>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-8">
-        <div class="card">
-          <h4 id="type" class="headline-secondary">Typography</h4>
-          <h1 class="headline-primary">Take a look at this amazing headline</h1>
-          <p>
-            This is a typical paragraph for the UI Kit.
-            <a href="#" class="link">Here is what a link might look like</a>.
-            The typical font family for this kit is Lato. This kit is intended
-            for clean and refreshing web layouts. No jazz hands here, just the
-            essentials to make dreams come true, with minimal clean web design.
-            The kit comes fully equipped with everything from full responsive
-            media styling to buttons to form fields.
-            <em>I enjoy using italics as well from time to time</em>. Feel free
-            to create the most amazing designs ever with this kit. I truly hope
-            you enjoy not only the kit but this amazing paragraph as well. :)
-          </p>
-          <blockquote class="blockquote">
-            You know what really gets me going? A really nice set of block
-            quotes. That's right, block quotes that say, "Hey, I'm an article
-            you want to read and nurture."
-          </blockquote>
-        </div>
-      </div>
-      <div class="col-4">
-        <form class="form">
-          <legend id="forms" class="headline-secondary">Form Elements</legend>
-          <img class="img-avatar" src="images/avatar.png" alt="Avatar" />
-          <label class="hidden" for="username">Username:</label>
-          <input
-            class="input"
-            type="text"
-            id="username"
-            placeholder="Username"
-          />
-          <label class="hidden" for="password">Password:</label>
-          <input
-            class="input"
-            type="password"
-            id="password"
-            placeholder="Password"
-          />
-          <button class="btn default" type="submit" value="Login">Login</button>
-        </form>
-      </div>
-    </div>
-
-    <h4 id="images" class="headline-secondary">Images</h4>
-
-    <div class="row">
-      <div class="col-6">
-        <img class="img img-frame" src="images/image.png" alt="sample image" />
-      </div>
-      <div class="col-6">
-        <img class="img img-avatar" src="images/avatar.png" alt="Avatar" />
-      </div>
-    </div>
-
-    <h4 id="buttons" class="headline-secondary">Buttons</h4>
-
-    <div class="row">
-      <div class="col-12">
-        <button class="btn default">default</button>
-        <button class="btn success">success</button>
-        <button class="btn error">error</button>
-        <button class="btn warning">warning</button>
-        <button class="btn info">info</button>
-      </div>
-    </div>
-
-    <h4 id="grid" class="headline-secondary">Grid System</h4>
-
-    <div class="row">
-      <div class="col-12 theme">.col-12</div>
-    </div>
-    <div class="row">
-      <div class="col-6 theme">.col-6</div>
-      <div class="col-6 theme">.col-6</div>
-    </div>
-    <div class="row">
-      <div class="col-4 theme">.col-4</div>
-      <div class="col-4 theme">.col-4</div>
-      <div class="col-4 theme">.col-4</div>
-    </div>
-    <div class="row">
-      <div class="col-3 theme">.col-3</div>
-      <div class="col-3 theme">.col-3</div>
-      <div class="col-3 theme">.col-3</div>
-      <div class="col-3 theme">.col-3</div>
-    </div>
-    <div class="row">
-      <div class="col-5 theme">.col-5</div>
-      <div class="col-7 theme">.col-7</div>
-    </div>
-    <div class="row">
-      <div class="col-8 theme">.col-8</div>
-      <div class="col-4 theme">.col-4</div>
-    </div>
-    <div class="row">
-      <div class="col-7 theme centered">.centered .col-7</div>
-    </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/39b2a24396.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

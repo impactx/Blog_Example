@@ -2,56 +2,15 @@
 /*              Buttons                          */
 /* ============================================= */
 
-.btn {
-    margin-top: 15px;
-    width: 100%;
-    color: #fff;
-    border: none;
-    padding: 10px 0;
-    text-transform: uppercase;
+.button {
+    @include center;
+    width: 150px;
+    padding: 20px 30px;
     border-radius: 5px;
-    background-color: $light-red;
-
-    
-  }
-  
-  .default {
-    background-color: $light-blue;
-    transition: background-color .5s;
-    &:hover {
-      background-color: lighten($light-blue, 15%);
-      
+    text-align: center;
+    background-color: $shade;
+    a {
+        color: white;
+        font-size: 1.5em;
     }
-  }
-  
-  .error {
-    background-color: $light-red;
-    transition: background-color .5s;
-    &:hover {
-      background-color: lighten($light-red, 15%);
-    }
-  }
-  
-  .info {
-    background-color: $light-purple;
-    transition: background-color .5s;
-    &:hover {
-      background-color: lighten($light-purple, 15%);
-    }
-  }
-  
-  .success {
-    background-color: #63cc82;
-    transition: background-color .5s;
-    &:hover {
-      background-color: lighten(#63cc82, 15%);
-    }
-  }
-  
-  .warning {
-    background-color: $light-orange;
-    transition: background-color .5s;
-    &:hover {
-      background-color: lighten($light-orange, 15%);
-    }
-  }
+}

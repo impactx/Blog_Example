@@ -1,0 +1,21 @@
+.info {
+    margin: 50px auto;
+    p {
+        text-align: center;
+    }
+    & div:first-child {
+        margin-bottom: 100px;
+    }
+}
+
+.follow-social {
+    i {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+        transition: border-bottom 1s ease-in-out;
+        
+    }
+    
+}

@@ -3,3 +3,46 @@
     margin-left: auto;
     margin-right: auto;
 }
+@mixin  center {
+    margin-left: auto;
+    margin-right: auto;
+} 
+    
+@mixin mobile-container {
+    width: 90%;
+    margin: auto;
+}
+
+@mixin ul_style_3 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    @include tablet() {
+      @content;
+    }
+    
+}
+@mixin  hamburger_line  {
+    position: absolute;
+    content: '';
+    display: block;
+    background: black;
+    width: 30px;
+    height: 6px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: transform 2s ease-in-out, opactiy 2s ease-out;
+}
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+@mixin large_screen {
+  @media (min-width: $breakpoint-large) {
+    @content;
+  }
+}
