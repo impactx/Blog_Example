@@ -1,21 +1,40 @@
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
+
 h1,
-h3 {
+h3,
+h2 {
   font-family: "Dancing Script", cursive;
   text-align: center;
   font-weight: bolder;
+  
 }
 h1 {
+  
   @include tablet {
     font-size: 50px;
-    color: white;
+    color: $header-color;
+
+    @include large_screen {
+      font-size: 4em;
+    }
   }
 }
 
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  @include large_screen {
+    font-size: 3.5em;
+  }
+}
 h3 {
   font-size: 2em;
+  margin-bottom: 0;
+  @include large_screen {
+    font-size: 3em;
+  }
 }
 
 li {
@@ -24,9 +43,14 @@ li {
 a {
   text-decoration: none;
   color: black;
+  padding: 0;
+  @include large_screen {
+    font-size: 1em;
+  }
 }
 ul {
   margin: 0;
+  padding: 0;
 }
 main {
   @include mobile-container;
@@ -37,7 +61,8 @@ img {
 }
 p,
 li,
-a {
+a,
+i {
   font-family: "Roboto", sans-serif;
 }
 a {
@@ -45,10 +70,13 @@ a {
 }
 p {
   font-size: $font-mobile;
-
+  padding: 0px;
   font-weight: lighter;
   @include tablet {
     font-size: 1.5em;
+  }
+  @include large_screen  {
+    font-size: $font-large;
   }
 }
 aside {

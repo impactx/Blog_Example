@@ -1,35 +1,28 @@
 .h-container {
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    @include center_image;
+  width: 100%;
+  
+  background-color: white;
+  @include center_image;
+
+  @include tablet {
+    background: $primary-color;
+    height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  }
+  &::after {
     @include tablet {
-        background-color: rgb(98, 4, 250);
-        
     }
-    &::after {
-        
-        @include tablet {
-            content: '';
-            display: block;
-            height: 100px;
-            width: 100%;
-            transform: rotate(2deg) translate(0px,30px) scale(1.1);
-            background-color: rgb(98, 4, 250);
-            
-        }
-    }
+  }
 }
 
-
-
 .header-line {
-    max-width: 448px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: black;
-    margin: 40px auto;
-    @include tablet {
-        display: none;
-    }
+  width: 80%;
+  max-width: 448px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 40px auto;
+  @include tablet {
+    display: none;
+  }
 }

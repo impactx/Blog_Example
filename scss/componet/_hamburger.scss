@@ -1,10 +1,9 @@
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 5px;
     transition: transform .6s ease-in-out;
-    // Animation for hamburger
-     
+    z-index: 110;
     
 }
 
@@ -16,7 +15,7 @@
     width: 30px;
     height: 6px;
     border-radius: 5px;
-    transition: transform .6s ease-in-out, background-color 3s ease-in-out;
+    transition: all .6s ease-in-out;
    @include tablet {
        display: none;
    }
@@ -29,10 +28,11 @@
         @include hamburger_line;
         transform: translateY(10px);
     }
+    // Targets hamburger
     &.open {
         background: transparent;
     }
-
+    // Animation for hamburger
     &.open::before{
         transform: rotate(-45deg);
     }
