@@ -519,7 +519,7 @@ i {
 /*              Navigation                       */
 /* ============================================= */
 .nav {
-  background: #6204fa;
+  background: linear-gradient(#006EFF, #1100FF);
   position: fixed;
   width: 100%;
   height: 50vh;
